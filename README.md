@@ -11,9 +11,9 @@ GcodeGen is a G-code generator designed specifically for testing purposes in CNC
 
 
 * Clone the repository to your local machine. 
-    2. Run the main.py file.
-* Use The Quick demo nothebook in this repository
-
+    1. Run the main.py file.
+    2. Use The Quick demo nothebook in this repository
+* Use the Colaboratory [Link](https://colab.research.google.com/drive/1RNuTV2ibV9yCcWHlzD7E91hrsKa2-EdN?usp=sharing) (Must Be logged in)
 
 ### Parameters to change
 
