@@ -114,5 +114,9 @@ def cycle_define(input_user, info_liste):
 
 if __name__ == '__main__':
     temp1 = get_user_input()
-    temp2 = cycle_define(temp1, info_tabelle)
+    try:
+        temp2 = cycle_define(temp1, info_tabelle)
+    except KeyError:
+        print("Falsche eingabe werte.")
+        quit()
     write_file(temp1["datei_name"], temp2)
