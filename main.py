@@ -16,8 +16,8 @@ info_tabelle = {"+X_+Y": "X_Y-_X-_Y",  # Eine Tabelle die der code benötigt, um
 
 def get_user_input():
     """Erfragt die eingaben des Benutzers"""
-    input_temp = input("Test (j/n)?: ").lower()
-    if input_temp == "j" or input_temp == "y" or input_temp == "":
+    input_temp = input("Test Lauf mit vorgegebenen parametern (j/n)?: ").lower()
+    if input_temp == "j" or input_temp == "y":
         with open("test.json", "r") as f:
             output_user = json.load(f)
 
@@ -31,7 +31,14 @@ def get_user_input():
         y_position_schnitt_anfang = int(input("Y Position Schnitt Anfang (mm): "))
         z_position_schnitt_anfang = int(input("z Position Schnitt Anfang (mm): "))
         richtung_des_schnitts = input("Richtung des Schnitts (+X, -X, +Y, -Y): ").upper()
-        lage_des_materials = input("Lage des Materials (+X, -Y, +Y, -Y): ").upper()
+        while richtung_des_schnitts not in ["+X", "-X", "+Y", "-Y"]:
+            print("Falsche Eingabe!")
+            richtung_des_schnitts = input("Richtung des Schnitts (+X, -X, +Y, -Y): ").upper()
+
+        if richtung_des_schnitts == "+X" or richtung_des_schnitts == "-X":
+            lage_des_materials = input("Lage des Materials (+Y, -Y): ").upper()
+        else:
+            lage_des_materials = input("Lage des Materials (+X, -X").upper()
         datei_name = input("Dateiname(str): ").replace(" ", "")
         sicherheitsabstand = int(input("sicherheitsabstand (größer als fräser radius) (mm): "))
         output_user: dict = {"vorschub_ges": vorschub_ges, "zustellung": zustellung, "schnitt_tiefe": schnitt_tiefe, "spindel_ges": spindel_ges, "len_des_schnitts": len_des_schnitts,
