@@ -10,7 +10,7 @@ GcodeGen is a G-code generator designed specifically for testing purposes in CNC
 ### Getting Started:
 
 
-* Clone the repository to your local machine And run the main.py file.
+* Clone the repository to your local machine And run the main.py file. (You need numpy 1.26.3)
 
 * Use the Colaboratory [Link](https://colab.research.google.com/drive/1RNuTV2ibV9yCcWHlzD7E91hrsKa2-EdN?usp=sharing) (Must Be logged in)
 
