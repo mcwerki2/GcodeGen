@@ -21,7 +21,8 @@ GcodeGen is a G-code generator designed specifically for testing purposes in CNC
 * Safety distance
 * Spindle speed 
 * Lenght of cut
-* Depth of cut
+* Radius for the cut
 * X / Y / Z Position for the beginn of the cut 
 * Direction of the cut
-* Name of the ouput file 
+* Name of the ouput file
+
