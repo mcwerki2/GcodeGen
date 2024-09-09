@@ -1,5 +1,6 @@
 # GcodeGen
 
+## This is a WIP Projekt and will be archived soon
 GcodeGen is a G-code generator designed specifically for testing purposes in CNC machining. This open-source tool simplifies the process of translating user-defined parameters into precise G-code instructions.
 ### Key Feature:
 
